@@ -1,0 +1,42 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jeffyxu/rconfig.git
+          username: kaixumvp@163.com
+          password: xukai19921224?
+
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.1.17:9092
+    bus:
+      refresh:
+        enabled=true:
+  kafka:
+    bootstrap-servers: 192.168.1.17:9092
+    consumer:
+      group-id: test
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://xukai:123456@${eureka.instance.hostname}:8081/eureka
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
