@@ -1,5 +1,5 @@
 HELP.md
-.gradle
+.gradle/**
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
@@ -30,3 +30,9 @@ out/
 
 ### VS Code ###
 .vscode/
+/.gradle/
+/.gradle/
+/.
+/.gitignore
+src/main/java/com/heiiyo/authserver/controller/
+src/main/java/com/heiiyo/authserver/service/

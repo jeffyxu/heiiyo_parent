@@ -1,4 +1,5 @@
 rootProject.name = 'parent'
-/*include "rcenter"
+include "rcenter"
 include "configserver"
-include "gateway"*/
+include "gateway"
+include "authserver"
