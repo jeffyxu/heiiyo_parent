@@ -1,3 +1,4 @@
+/*
 package com.heiiyo.authserver.streams;
 
 import org.springframework.cloud.stream.annotation.Output;
@@ -7,4 +8,4 @@ public interface GreetingsStreams {
 
     @Output(OutPutStreams.ELK_OUTPUT)
     MessageChannel outboundGreetings();
-}
+}*/

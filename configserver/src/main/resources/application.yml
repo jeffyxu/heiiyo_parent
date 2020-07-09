@@ -4,7 +4,6 @@ server:
 spring:
   application:
     name: configserver
-
   cloud:
     config:
       server:
@@ -13,21 +12,9 @@ spring:
           username: kaixumvp@163.com
           password: xukai19921224?
 
-    stream:
-      kafka:
-        binder:
-          brokers: 192.168.1.17:9092
-    bus:
-      refresh:
-        enabled=true:
-  kafka:
-    bootstrap-servers: 192.168.1.17:9092
-    consumer:
-      group-id: test
-
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: 39.99.191.129
   client:
     register-with-eureka: true
     fetch-registry: true
